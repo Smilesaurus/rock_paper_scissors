@@ -14,8 +14,19 @@
             return Math.floor(Math.random() * (max - min) + min);
         }
 
-        const computerChoice = getComputerChoice(1,3);
-        console.log(computerChoice);
+        const computerChoiceNum = getComputerChoice(1,3);
+        console.log(computerChoiceNum);
+
+        let computerChoice;
+
+        if (computerChoiceNum == 1) {
+            computerChoice = console.log("Computer chose Rock");
+        } else if (computerChoiceNum == 2) {
+            computerChoice = console.log("Computer chose Paper");
+        } else {
+            computerChoice = console.log("Computer chose Scissors");
+        }
+
     </script>
 
 </body>
